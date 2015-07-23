@@ -15,5 +15,6 @@
 	<modules>
 		<module>hadoop-whiffet-common</module>
 		<module>hadoop-whiffet-hbase</module>
+		<module>hadoop-whifet-hb</module>
 	</modules>
 </project>
