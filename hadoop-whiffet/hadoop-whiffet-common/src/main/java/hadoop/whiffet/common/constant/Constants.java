@@ -1,4 +1,4 @@
-package constant;
+package hadoop.whiffet.common.constant;
 
 /**
  * @author puppy

@@ -1,4 +1,4 @@
-package org.hadoop.whiffet.common.util;
+package hadoop.whiffet.common.util;
 
 
 import java.util.Map;

@@ -1,4 +1,4 @@
-package org.hadoop.whiffet.common;
+package hadoop.whiffet.common;
 
 /**
  * Hello world!

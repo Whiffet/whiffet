@@ -1,4 +1,4 @@
-package org.hadoop.whiffet.common.util;
+package hadoop.whiffet.common.json;
 
 import java.util.ArrayList;
 import java.util.List;
