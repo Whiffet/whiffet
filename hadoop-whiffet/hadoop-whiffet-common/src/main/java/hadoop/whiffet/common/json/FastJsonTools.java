@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.TypeReference;
@@ -88,4 +90,15 @@ public class FastJsonTools {
 		}
 		return ja;
 	}
+	
+	public static String toJSONString(Object o){
+		if(o!=null){
+		return JSON.toJSONString(o);
+		}else {
+			return "";
+		}
+	}
+	
+	
+	
 }

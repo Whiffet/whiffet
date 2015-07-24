@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+      
+    <mapper namespace="cn.gitv.bi.hadoop.impala.dao.mapper.LogMapper">  
+    
+     <resultMap type="LogOriginal" id="logOriginal" >
+        <result column="ip" property="ip"/>
+        <!--  <result column="partner_code" property="partnerCode"/> -->
+       
+    </resultMap> 
+      
+        <!-- 使用sql标签可以将公共的sql提取出来复用 -->  
+   		<sql id="queryFields">  
+          ip 
+        </sql> 
+           
+        <select id="getLog" parameterType="QueryCondition" resultMap="logOriginal">  
+            select *
+     <!--   <include refid="queryFields"/>  -->
+            from pb_clean.log_original where logdate=#{logdate}  limit 10  
+        </select>  
+     
+       
+          
+    </mapper>  

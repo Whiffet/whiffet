@@ -16,5 +16,6 @@
 		
 	  	<module>hadoop-whiffet-hbase</module>
     <module>hadoop-whiffet-impala</module>
+    <module>hadoop-whiffet-internal-api</module>
   </modules>
 </project>
