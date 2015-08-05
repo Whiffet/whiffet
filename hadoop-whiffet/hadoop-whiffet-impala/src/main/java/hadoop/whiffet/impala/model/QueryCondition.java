@@ -4,6 +4,8 @@ package hadoop.whiffet.impala.model;
 
 import java.io.Serializable;
 
+import org.apache.hadoop.classification.InterfaceAudience.Private;
+
 /** 
  * @author  puppy 
  * @date 2015年7月24日 下午12:20:29 
@@ -23,6 +25,7 @@ public class QueryCondition implements Serializable{
 	
 	private String logdate;
 
+	private String devMac;
 	public QueryCondition() {
 		super();
 	}
@@ -73,6 +76,14 @@ public class QueryCondition implements Serializable{
 
 	public void setLogdate(String logdate) {
 		this.logdate = logdate;
+	}
+
+	public String getDevMac() {
+		return devMac;
+	}
+
+	public void setDevMac(String devMac) {
+		this.devMac = devMac;
 	}
 	
 	

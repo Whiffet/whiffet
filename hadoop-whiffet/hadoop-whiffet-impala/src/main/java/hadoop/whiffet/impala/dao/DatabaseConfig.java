@@ -2,6 +2,7 @@ package hadoop.whiffet.impala.dao;
 
 import hadoop.whiffet.impala.model.LogOriginal;
 import hadoop.whiffet.impala.model.QueryCondition;
+import hadoop.whiffet.impala.model.RecommendData;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +16,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
+
 
 
 
@@ -86,7 +88,7 @@ public class DatabaseConfig {
 		sessionFactory.setDataSource(dataSource);
 		sessionFactory.setMapperLocations(resolver
 				.getResources("classpath*:mapper/*.xml"));
-		sessionFactory.setTypeAliases(new Class[] {  QueryCondition.class,LogOriginal.class });
+		sessionFactory.setTypeAliases(new Class[] {  QueryCondition.class,LogOriginal.class,RecommendData.class});
 		sessionFactory.getObject().getConfiguration()
 				.setMapUnderscoreToCamelCase(true);
 		return sessionFactory.getObject();
